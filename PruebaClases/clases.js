@@ -14,9 +14,9 @@ class Animal{
 }
 
 //instancia de la clase
-let perro = new Animal("perro",6,"blanco");
-let gato = new Animal("gato",1,"gris");
-let cerdo = new Animal("cerdo",7,"rosa");
+const perro = new Animal("perro",6,"blanco");
+const gato = new Animal("gato",1,"gris");
+const cerdo = new Animal("cerdo",7,"rosa");
 
 //utlización de metodos
 perro.verInfo();

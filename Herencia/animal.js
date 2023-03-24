@@ -20,6 +20,6 @@ class Perro extends Animal{
     }
 }
 
-let firulais = new Perro("bicho",6,"marron", 45);
+const firulais = new Perro("bicho",6,"marron", 45);
 firulais.cagar();
 firulais.verInfo();
