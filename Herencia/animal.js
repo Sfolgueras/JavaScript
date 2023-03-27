@@ -12,14 +12,22 @@ class Animal{
 
 class Perro extends Animal{
     constructor(especie, edad, color ,peso){
+        //super para heredar los atributos del padre
         super (especie, edad, color);
         this.peso = peso;
     }
-    cagar = ()=>{
+    //metodo propio estatico(el metodo estatico se puede invocar sin 
+    //necesidad de instanciar la clase)    
+    static cagar = ()=>{
         alert("Me cague")
+    }
+    //metodo set
+    set cambioColor(newColor){
+        this.color = newColor;
     }
 }
 
 const firulais = new Perro("bicho",6,"marron", 45);
-firulais.cagar();
-firulais.verInfo();
+firulais.cambioColor = "rosita";
+Perro.cagar();
+document.write(firulais.color);
