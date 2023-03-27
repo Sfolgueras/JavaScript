@@ -13,28 +13,28 @@
             <td colspan="4"><span id="resultado"></span></td>
         </tr>
         <tr>
-            <td><button id="7">7</button></td>
-            <td><button id="8">8</button></td>
-            <td><button id="9">9</button></td>
-            <td><button id="/">/</button></td>
+            <td><button id="7"onclick="agregarNumero(this)" data-valor="7">7</button></td>
+            <td><button id="8"onclick="agregarNumero(this)" data-valor="8">8</button></td>
+            <td><button id="9"onclick="agregarNumero(this)" data-valor="9">9</button></td>
+            <td><button id="/"onclick="dividir('/')" data-valor="/">/</button></td>
         </tr>
         <tr>
-            <td><button id="4">4</button></td>
-            <td><button id="5">5</button></td>
-            <td><button id="6">6</button></td>
-            <td><button id="*">*</button></td>
+            <td><button id="4"onclick="agregarNumero(this)" data-valor="4">4</button></td>
+            <td><button id="5"onclick="agregarNumero(this)" data-valor="5">5</button></td>
+            <td><button id="6"onclick="agregarNumero(this)" data-valor="6">6</button></td>
+            <td><button id="*"onclick="multiplicar('*')" data-valor="*">*</button></td>
         </tr>
         <tr>
-            <td><button id="1">1</button></td>
-            <td><button id="2">2</button></td>
-            <td><button id="3">3</button></td>
-            <td><button id="-">-</button></td>
+            <td><button id="1" onclick="agregarNumero(this)" data-valor="1">1</button></td>
+            <td><button id="2"onclick="agregarNumero(this)" data-valor="2">2</button></td>
+            <td><button id="3"onclick="agregarNumero(this)" data-valor="3">3</button></td>
+            <td><button id="-"onclick="restar('-')" data-valor="-">-</button></td>
         </tr>
         <tr>
-            <td><button id="0">0</button></td>
-            <td><button id="=">=</button></td>
-            <td><button id="C">C</button></td>
-            <td><button id="+">+</button></td>
+            <td><button id="0" onclick="agregarNumero(this)" data-valor="0">0</button></td>
+            <td><button id="=" onclick="igual()" data-valor="=">=</button></td>
+            <td><button id="C" onclick="reset()" data-valor="C">C</button></td>
+            <td><button id="+" onclick="sumar('+')"data-valor="+">+</button></td>
         </tr>
     </table>
     <script src="codigo.js"></script>
