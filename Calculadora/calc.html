@@ -1,3 +1,7 @@
+<!--
+    Este es un código HTML para una calculadora básica que utiliza JavaScript para realizar las operaciones matemáticas.
+    Autor: Sergio Folgueras Calabria
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +11,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculadora basica</title>
 </head>
+<!-- El onlead sirve para llamar a la funcion calculadora para inciar la calculadora-->
 <body onload="calculadora();">
     <table class="calculadora">
         <tr>
             <td colspan="4"><span id="resultado"></span></td>
         </tr>
         <tr>
+            <!-- Todos los onclick sirven para llamar a funciones declaradas en el codigo.js que realizan tareas especificas-->
             <td><button id="7"onclick="agregarNumero(this)" data-valor="7">7</button></td>
             <td><button id="8"onclick="agregarNumero(this)" data-valor="8">8</button></td>
             <td><button id="9"onclick="agregarNumero(this)" data-valor="9">9</button></td>
